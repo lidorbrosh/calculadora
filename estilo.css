@@ -1,0 +1,23 @@
+.numero, .ponto {
+    background-color: #555;
+    color: white;
+}
+
+.operador {
+    background-color: #ff9800;
+    color: white;
+}
+
+.igual {
+    background-color: #4caf50;
+    color: white;
+}
+
+.limpar {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
