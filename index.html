@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div class="calculadora">
         <div class="tela">0</div>
         <button class="limpar">C</button>
-        <button class="operador">/</button>
-        <button class="operador">X</button>
-        <button class="operador">-</button>
-        <button class="numero">7</button>
-        <button class="numero">8</button>
-        <button class="numero">9</button>
-        <button class="operador">+</button>
-        <button class="numero">4</button>
-        <button class="numero">5</button>
-        <button class="numero">6</button>
+        <button class="operador" data-operador="/">/</button>
+        <button class="operador" data-operador="*">X</button>
+        <button class="operador" data-operador="-">-</button>
+        <button class="numero" data-numero="7">7</button>
+        <button class="numero" data-numero="8">8</button>
+        <button class="numero" data-numero="9">9</button>
+        <button class="operador" data-operador="+">+</button>
+        <button class="numero" data-numero="4">4</button>
+        <button class="numero" data-numero="5">5</button>
+        <button class="numero" data-numero="6">6</button>
         <button class="igual">=</button>
-        <button class="numero">1</button>
-        <button class="numero">2</button>
-        <button class="numero">3</button>
-        <button class="numero zero">0</button>
-        <button class="ponto">.</button>
+        <button class="numero" data-numero="1">1</button>
+        <button class="numero" data-numero="2">2</button>
+        <button class="numero" data-numero="3">3</button>
+        <button class="numero zero" data-numero="0">0</button>
+        <button class="ponto" data-numero=".">.</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
