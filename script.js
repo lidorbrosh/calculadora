@@ -1,13 +1,25 @@
-function adicionarDigito(digito) {
-    if (valorAtual === '0') {
-        valorAtual = digito;
-    } else {
-        valorAtual += digito;
-    }
-    atualizarTela();
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const tela = document.querySelector('.tela');
+    const botoes = document.querySelectorAll('button');
 
-botoes.forEach(botao => {
+    let valorAtual = '0';
+    let operadorPendente = null;
+    let valorAnterior = null;
+
+    function atualizarTela() {
+        tela.textContent = valorAtual;
+    }
+  
+    function adicionarDigito(digito) {
+        if (valorAtual === '0') {
+            valorAtual = digito;
+        } else {
+            valorAtual += digito;
+        }
+        atualizarTela();
+    }
+
+    botoes.forEach(botao => {
     botao.addEventListener('click', () => {
         if (botao.classList.contains('numero')) {
             adicionarDigito(botao.textContent);
@@ -18,4 +30,6 @@ botoes.forEach(botao => {
             }
         }
     });
+
+    atualizarTela();
 });
