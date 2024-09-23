@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         tela.textContent = valorAtual;
     }
   
+    function limpar() {
+    valorAtual = '0';
+    operadorPendente = null;
+    valorAnterior = null;
+    atualizarTela();
+    }
+  
     function adicionarDigito(digito) {
         if (valorAtual === '0') {
             valorAtual = digito;
@@ -66,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
             definirOperador(botao.textContent);
         } else if (botao.classList.contains('igual')) {
             calcular();
+        } else if (botao.classList.contains('limpar')) {
+            limpar();
         } else if (botao.classList.contains('ponto')) {
             if (!valorAtual.includes('.')) {
                 valorAtual += '.';
