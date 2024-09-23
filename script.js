@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
             adicionarDigito(botao.textContent);
         } else if (botao.classList.contains('operador')) {
             definirOperador(botao.textContent);
+        } else if (botao.classList.contains('igual')) {
+            calcular();
         } else if (botao.classList.contains('ponto')) {
             if (!valorAtual.includes('.')) {
                 valorAtual += '.';
