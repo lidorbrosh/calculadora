@@ -1,0 +1,18 @@
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+    gap: 10px;
+}
+
+.tela {
+    grid-column: span 4;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.igual {
+    grid-row: span 2;
+}
